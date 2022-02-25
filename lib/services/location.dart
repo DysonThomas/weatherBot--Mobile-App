@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:forecast/services/location.dart';
+import 'package:geolocator/geolocator.dart';
+
+class Location {
+  // Location({required this.latitude, required this.longitude});
+  double latitude = 0;
+  double longitude = 0;
+  Future<void> getCurrentLocation() async {
+    try {
+      Position position = await Geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.low);
+      latitude = position.latitude;
+      longitude = position.longitude;
+    } catch (e) {
+      print(e);
+    }
+  }
+}
