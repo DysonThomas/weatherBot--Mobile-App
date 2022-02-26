@@ -19,7 +19,7 @@ class _LocationScreenState extends State<LocationScreen> {
   int condition = 0;
   int mainImgIndex = 1;
   String Searchedcity = "";
-  static const apiKey = '6ca8fdf41d0eb64bb331d1fd4de96492';
+  static const apiKey = 'MapKey';
   void initState() {
     updateUi(widget.weatherData);
     // TODO: implement initState
