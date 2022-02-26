@@ -14,7 +14,7 @@ class LoadingPage extends StatefulWidget {
 class _LoadingPageState extends State<LoadingPage> {
   double cLat = 0;
   double cLong = 0;
-  static const apiKey = '6ca8fdf41d0eb64bb331d1fd4de96492';
+  static const apiKey = 'KeyMap';
   @override
   void initState() {
     getLoc();
